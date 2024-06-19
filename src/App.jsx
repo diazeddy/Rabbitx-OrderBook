@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import Orderbook from './Orderbook';
-import { NETWORK_TYPE } from './constants';
+import Orderbook from './components/Orderbook';
+import { NETWORK_TYPE } from './utils/constants';
 import './App.css';
 
 function App() {

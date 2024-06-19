@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 
-const PriceTable = ({data}) => {
+const PriceTable = ({ data }) => {
   const [keys, setKeys] = useState([]);
 
   useEffect(() => {
     setKeys(Object.keys(data).sort((a, b) => Number(a) > Number(b) ? 1 : -1));
-  }, [JSON.stringify(data)]);
+  }, [data]);
 
   return (
     <table>
