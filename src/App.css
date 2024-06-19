@@ -11,3 +11,7 @@ table {
   width: 100%;
   table-layout: fixed;
 }
+
+article {
+  justify-content: flex-start;
+}

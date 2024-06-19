@@ -4,7 +4,7 @@ const PriceTable = ({data}) => {
   const [keys, setKeys] = useState([]);
 
   useEffect(() => {
-    setKeys(Object.keys(data).sort((a, b) => a > b ? 1 : -1));
+    setKeys(Object.keys(data).sort((a, b) => Number(a) > Number(b) ? 1 : -1));
   }, [JSON.stringify(data)]);
 
   return (
