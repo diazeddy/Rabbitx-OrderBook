@@ -1,2 +1,0 @@
-VITE_TEST_TOKEN="JWT token for test network"
-VITE_PROD_TOKEN="JWT token for production network"
