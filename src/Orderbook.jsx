@@ -77,7 +77,6 @@ const Orderbook = ({network}) => {
       // Handle incoming orderbook updates
       subscription.on('publication', (ctx) => {
         const data = ctx.data;
-        console.log(data);
         setSequenceNumber(async (prev) => {
           // check the received sequence is correct
           if (prev >= 0 && prev !== data.sequence && prev !== data.sequence - 1) {
