@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import Orderbook from './Orderbook';
 import './App.css';
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
             <option value="prod">Production Network</option>
           </select>
         </header>
+
+        <div>
+          <Orderbook network={network}/>
+        </div>
       </section>
     </main>
   )
